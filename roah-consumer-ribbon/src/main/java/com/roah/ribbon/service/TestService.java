@@ -1,4 +1,4 @@
-package com.roah.service;
+package com.roah.ribbon.service;
 
 import com.alibaba.fastjson.JSONObject;
 
@@ -10,4 +10,6 @@ import com.alibaba.fastjson.JSONObject;
  */
 public interface TestService {
     public JSONObject test(String test);
+    public String demoTest(String test);
+
 }
