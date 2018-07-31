@@ -1,5 +1,7 @@
 package com.roah.service;
 
+import com.alibaba.fastjson.JSONObject;
+
 /**
  * TODO: Add Description
  *
@@ -7,5 +9,5 @@ package com.roah.service;
  * @since 07/27/2018
  */
 public interface TestService {
-    public String test(String test);
+    public JSONObject test(String test);
 }

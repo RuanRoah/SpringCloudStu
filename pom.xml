@@ -11,6 +11,7 @@
         <module>roah-service</module>
         <module>roah-zuul</module>
         <module>roah-consumer-ribbon</module>
+        <module>roah-feign</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -38,6 +39,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
