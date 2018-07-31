@@ -12,6 +12,7 @@
         <module>roah-zuul</module>
         <module>roah-consumer-ribbon</module>
         <module>roah-feign</module>
+        <module>roah-interface</module>
     </modules>
     <packaging>pom</packaging>
 
