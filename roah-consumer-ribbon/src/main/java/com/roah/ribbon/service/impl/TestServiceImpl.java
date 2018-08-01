@@ -25,14 +25,16 @@ public class TestServiceImpl implements TestService {
     public JSONObject test(String test) {
         String res = "我是你爸爸";
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("key",res+":"+test);
-        jsonObject.put("from",port);
+        jsonObject.put("key", res + ":" + test);
+        jsonObject.put("from", port);
         return jsonObject;
     }
 
     @Override
     public String demoTest(String test) {
-        return null;
+        return restTemplate.getForObject("http://ROAH-SERVICE/gotest",String.class);
+
     }
+
 
 }

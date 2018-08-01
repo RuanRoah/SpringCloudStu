@@ -8,11 +8,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>roah-eureka</module>
-        <module>roah-service</module>
         <module>roah-zuul</module>
         <module>roah-consumer-ribbon</module>
         <module>roah-feign</module>
         <module>roah-interface</module>
+        <module>roah-api</module>
+
     </modules>
     <packaging>pom</packaging>
 

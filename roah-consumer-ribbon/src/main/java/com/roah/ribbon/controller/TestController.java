@@ -22,8 +22,8 @@ public class TestController {
         return testService.demoTest(test);
     }
     @GetMapping("/gotest")
-    public String gotest(){
+    public @ResponseBody  String gotest(){
         String test = "test";
-        return testService.demoTest(test);
+        return testService.test(test).toString();
     }
 }
