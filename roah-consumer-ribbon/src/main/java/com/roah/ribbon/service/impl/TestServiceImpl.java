@@ -1,6 +1,7 @@
 package com.roah.ribbon.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.roah.ribbon.service.TestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,10 +34,14 @@ public class TestServiceImpl implements TestService {
     }
 
     @Override
+    @HystrixCommand(fallbackMethod = "outError")
     public String demoTest(String test) {
         logger.debug("do");
         return restTemplate.getForObject("http://ROAH-API/test/go",String.class);
     }
 
+    public String outError(){
+        return "卧槽，崩了";
+    }
 
 }

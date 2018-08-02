@@ -13,6 +13,7 @@
         <module>roah-feign</module>
         <module>roah-interface</module>
         <module>roah-api</module>
+        <module>roah-pojo</module>
 
     </modules>
     <packaging>pom</packaging>
