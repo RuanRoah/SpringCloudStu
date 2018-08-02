@@ -1,2 +1,2 @@
 # SpringCloudStu
-SpringCloud基础组件瞎折腾
+SpringCloud基础组件瞎折腾demo拿来就能用，有问题可以提issue
