@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 11004
+spring:
+  application:
+    name: roah-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: roah-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: roah-feign
