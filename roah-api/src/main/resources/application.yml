@@ -1,6 +1,6 @@
 spring:
   application:
-    name: roah-eureka
+    name: roah-api
 eureka:
   client:
     serviceUrl:

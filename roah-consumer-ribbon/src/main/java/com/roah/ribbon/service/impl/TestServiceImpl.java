@@ -2,6 +2,8 @@ package com.roah.ribbon.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.roah.ribbon.service.TestService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -15,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 public class TestServiceImpl implements TestService {
-
+    Logger logger = (Logger) LoggerFactory.getLogger(TestServiceImpl.class);
     @Autowired
     RestTemplate restTemplate;
     @Value("${server.port}")
@@ -32,8 +34,8 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public String demoTest(String test) {
-        return restTemplate.getForObject("http://ROAH-SERVICE/gotest",String.class);
-
+        logger.debug("do");
+        return restTemplate.getForObject("http://ROAH-API/test/go",String.class);
     }
 
 

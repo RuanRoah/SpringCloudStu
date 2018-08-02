@@ -21,6 +21,12 @@ public class TestController {
     public String test(@RequestParam String test){
         return testService.demoTest(test);
     }
+    @GetMapping("/testgo")
+    public String testgo(){
+        String test = "test";
+        return testService.demoTest(test);
+    }
+
     @GetMapping("/gotest")
     public @ResponseBody  String gotest(){
         String test = "test";
