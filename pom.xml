@@ -9,11 +9,12 @@
     <modules>
         <module>roah-eureka</module>
         <module>roah-zuul</module>
-        <module>roah-consumer-ribbon</module>
+        <module>roah-ribbon</module>
         <module>roah-feign</module>
         <module>roah-interface</module>
         <module>roah-api</module>
         <module>roah-pojo</module>
+        <module>roah-myribbon</module>
 
     </modules>
     <packaging>pom</packaging>

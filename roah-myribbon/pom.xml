@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>roah-ribbon</artifactId>
-
+    <artifactId>myribbon</artifactId>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -98,4 +97,5 @@
             </snapshots>
         </repository>
     </repositories>
+
 </project>
