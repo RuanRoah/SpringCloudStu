@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
     @Autowired
     private TestService testService;
-    @GetMapping("go")
+    @GetMapping("/go")
     public String test(){
         return testService.test("蛤。。。？");
     }
