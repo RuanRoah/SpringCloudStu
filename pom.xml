@@ -18,6 +18,7 @@
         <module>roah-config</module>
         <module>roah-oauth</module>
         <module>roah-inmessage</module>
+        <module>roah-hystrix</module>
 
     </modules>
     <packaging>pom</packaging>
