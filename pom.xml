@@ -15,6 +15,9 @@
         <module>roah-api</module>
         <module>roah-pojo</module>
         <module>roah-myribbon</module>
+        <module>roah-config</module>
+        <module>roah-oauth</module>
+        <module>roah-inmessage</module>
 
     </modules>
     <packaging>pom</packaging>
